@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/star_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 1.25rem;
+    
+}
+
+.component-one {
+    display: flex;
+    width: 80%; /* Keep the width at 80% of the parent */
+    height: 65%; /* Set the height to 50% of the viewport height */
+    flex: 0;
+    margin: 15vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 9rem auto 0; /* Center horizontally and give top margin */
+
+}
+
+/* Ensure equal width for the columns */
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; /* Space items evenly in the column */
+    position: relative;
+}
+
+.middle-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* General hover-div styles */
+.hover-div {
+    display: flex; /* Add flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 120px; /* Fixed size for the hover div */
+    height: 120px; /* Fixed size for the hover div */
+    margin: 1rem;
+}
+
+.hover-div img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 1rem;
+    object-fit: contain; /* Ensures the image scales while maintaining aspect ratio */
+}
+
+/* Hover effect to change background color */
+.hover-div:hover {
+    background-color: #aab4c0;
+}
+.component-two {
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    height : 12vh;
+    margin: 9rem auto 0; /* Center horizontally and give top margin */
+
+}
+
+/* Style for the description area */
+.description-area {
+    margin: 6px;
+    padding: 4px 20px 20px;
+    height: 12vh;
+    font-size: 1.4rem; /* Larger font size */
+    line-height: 1.2; /* Increased line height */
+    color: #000; /* Black text */
+}
+
+
+
+/* Responsive layout to adjust layout on smaller screens */
+@media (max-width: 768px) {
+    .component-one {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .column {
+        margin-bottom: 1rem;
+    }
+}

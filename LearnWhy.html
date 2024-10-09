@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackathon</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header sticky offset scrolling">
+
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/NASA_logo.PNG" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a href="index.html">Intro</a></li>
+                        <li><a href="trivia1.html" >Trivia</a></li>
+                        <li><a href="experiments_index.html">Experiments </a></li>
+
+                    </ul> <!-- s-header__menu-links -->
+    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+
+            <!-- about
+            ----------------------------------------------- -->
+            <section id="about" class="s-about target-section">
+
+                <div class="row section-header" data-num="02">
+                    <h3 class="column lg-12 section-header__pretitle pretitle text-pretitle">Why Space Science</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1">
+                            Why are we examining <br>
+                            in space? 
+                              
+                            
+                        </h2>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div class="row process-list list-block show-ctr block-lg-one-half block-tab-whole">
+    
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Understand</h3>
+                        </div>
+                        <div class="list-block__text" style="color: white; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
+                            <p>
+                                To understand the fundamental ways life uses gravity 
+                                to regulate and sustain its growth, metabolism,
+                                 reproduction and development, and also how 
+                                 it repairs damage and protects itself from infection and disease
+
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Discover</h3>
+                        </div>
+                        <div class="list-block__text" style="color: white; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
+                            <p>
+                                Discover how organisms respond to space, develop physiological models, 
+                                identify underlying mechanisms, promote open science, 
+                                and create technologies for space research and human health support
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Observe</h3>
+                        </div>
+                        <div class="list-block__text" style="color: white; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
+                            <p>
+                                Effects observed in astronauts are similar to accelerated aging 
+                                and health problems caused by a sedentary lifestyle; 
+                                studying the human body in space for six months 
+                                gives us data that would take years to gather on Earth.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Improve</h3>
+                        </div>
+                        <div class="list-block__text" style="color: white;text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
+                            <p>
+                                Improve the quality of life on Earth 
+                                such as reducing the impacts of reduced
+                                 levels of physical activity and issues
+                                  that affect older adult populations on Earth
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+
+                </div> <!-- end process-list -->
+
+            </section> <!-- end s-about -->
+        </section>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--Buttons for prev and Next-->
+    <div id="sticky-nav">
+        <a href="LearnWhat.html">
+            <button id="prevButton" class="scrollButton">Previous</button>
+        </a>
+        <a href="radiation.html">
+            <button id="nextButton" class="scrollButton">Next</button>
+        </a>
+    </div>
+
+
+    <!-- JavaScript for scroll functionality -->
+    <script>
+        window.onscroll = function() {
+            var stickyNav = document.getElementById("sticky-nav");
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var scrollHeight = document.documentElement.scrollHeight;
+            var clientHeight = document.documentElement.clientHeight;
+
+            // Show buttons when reaching bottom of the page, hide otherwise
+            if (scrollTop + clientHeight >= scrollHeight - 10) {
+                stickyNav.style.display = "block";
+            } else {
+                stickyNav.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
